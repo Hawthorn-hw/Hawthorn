@@ -1,0 +1,116 @@
+@font-face {
+  font-family: kirimoni;
+  src: url(static/fonts/KirimomiSwash.ttf);
+}
+
+@font-face {
+  font-family: kirimoni;
+  font-style: italic;
+  src: url(static/fonts/KirimomiSwaIt.ttf);
+}
+
+* {
+  font-family: kirimoni;
+}
+
+body {
+  background-color: rgb(249, 249, 232); 
+}
+
+.navbar-brand {
+  font-style: italic;
+  font-size: 40px;
+}
+
+.nav-item {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.title-main {
+  font-size: 100px;
+}
+
+.title-sub {
+  font-size: 30px;
+}
+
+.title-section {
+  font-size: 40px;
+  /* font-style: italic; */
+}
+
+.content-section {
+  font-size: 25px;
+}
+
+.image-section {
+  width: 90%;
+  max-height: 300px;
+  margin: 50px;
+  object-fit: cover;  
+}
+
+.navbar {
+  background-color: rgb(249, 249, 232); 
+}
+
+.nav-link.active, .nav-link:hover {
+  border-bottom: 2px solid var(--bs-dark);
+}
+
+.slidein {
+  opacity: 0%;
+  animation: 1s slidein forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-5em);
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* waterfall */
+
+.poems {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.poems .item {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  font-size: 1.5em;
+}
+
+.item img {
+  object-fit: cover;
+  max-height: 300px;
+  width: 100%;
+}
+
+.item .title {
+  margin: 20px;
+  margin-bottom: 0px;
+  font-size: 1.6em;
+  /* font-style: italic; */
+}
+
+.item .content {
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.item .author {
+  text-align: right;
+  margin: 20px;
+  font-style: italic;
+}
